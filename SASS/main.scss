@@ -1,3 +1,12 @@
-body {
-	background-color: #FFFFFF;
-}
+@import "./base/variables";
+@import "./components/mobile-menu";
+@import "./components/model";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/adventeges";
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/our-client";
+@import "./layout/portfolio";
+@import "./layout/footer";
+@import "./modal-wind/modal-wind";
