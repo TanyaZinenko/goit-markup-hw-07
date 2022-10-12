@@ -1,0 +1,56 @@
+
+
+.foot-social__icons-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-social {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.foot-login {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 20px;
+}
+
+.foot-social__icons-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover{
+    background-color:$add-color;
+}
+
+}
+
+.foot-social__icons-title:hover,
+.foot-social__icons-title:focus {
+    background-color: #2196F3;
+}
+
+.foot-social__icons-title:not(:last-child) {
+    margin-right: 10px;
+}
+
+.foot-icons-color {
+    fill: $text-color;
+}
