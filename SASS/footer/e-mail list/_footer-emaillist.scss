@@ -1,0 +1,97 @@
+.mail {
+  display: inline-block;
+  position: relative;
+  margin-left: 215px;
+}
+
+.mail-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.mail-list-form {
+  display: inline-block;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.mail-list-lable {
+  display: flex;
+  flex-direction: row;
+}
+
+.mail-list-input {
+  display: inline-block;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  font-size: 16px;
+  line-height: 20px;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.mail-list-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+}
+
+.mail-list-btm {
+  display: flex;
+  position: absolute;
+  left: 370px;
+
+  top: auto;
+  bottom: 50%;
+  width: 200px;
+  height: 50px;
+  background-color: $add-color;
+  border: 1px solid $add-color;
+  border-radius: 4px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: $text-color;
+  text-align: left;
+  padding-left: 29px;
+}
+
+.mail-list-logon {
+  display: block;
+  position: absolute;
+  left: 29px;
+  top: 10px;
+}
+
+.icon-send {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 29px;
+  fill: $text-color;
+}
