@@ -1,0 +1,59 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filter-list {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-collor;
+    cursor: pointer;
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-list:hover {
+    color: $text-color;
+    background-color: $add-color;
+}
+
+.filter-list:focus {
+    color: $text-color;
+    background-color: $add-color;
+}
+
+.filter-all {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-collor;
+    width: 73px;
+    cursor: pointer;
+}
+
+.filter-all:hover {
+    color: $text-color;
+    background-color: $add-color;
+}
+.filter-all:focus {
+    color: $text-color;
+    background-color: $add-color;
+}
+.filter:hover {
+    cursor: pointer;
+}
