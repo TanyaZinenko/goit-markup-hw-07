@@ -1,0 +1,177 @@
+@import "../base/variables";
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .hero {
+    max-width: 1600px;
+    padding: 118px 0;
+    text-align: center;
+    background-color: #2f303a;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../imeges/hero/mobil-img/hero-1x.jpg);
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
+    screen and (min-resolution: 192dpi) and (min-width: 767px),
+    screen and (min-resolution: 2dppx) and (min-width: 767px) {
+    .hero {
+      background-image: url("../../imeges/hero/mobil-img/hero-2x.jpg");
+    }
+  }
+  .baner {
+    padding: 0 60px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-btn {
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 10px 24px;
+    color: $text-color;
+    border-radius: 4px;
+    margin-top: 30px;
+
+    background-color: $add-color;
+
+    &:focus {
+      background: #188ce8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+// FOR TABLET
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section {
+    width: 100%;
+  }
+  .hero {
+    width: 100%;
+    padding: 118px 0;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../imeges/hero/mobil-img/hero-1x.jpg);
+    background-size: cover;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px) and (max-windth: 1199px),
+    screen and (min-resolution: 192dpi) and (min-width: 767px) and (max-windth: 1199px),
+    screen and (min-resolution: 2dppx) and (min-width: 767px) and (max-windth: 1199px) {
+    .hero {
+      background-image: url("../../imeges/hero/mobil-img/hero-2x.jpg");
+    }
+  }
+
+  .baner {
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 10px 24px;
+    text-align: center;
+    color: $text-color;
+    border-radius: 4px;
+    margin-left: 308px;
+    margin-top: 30px;
+
+    background-color: $add-color;
+
+    &:focus {
+      background: #188ce8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+// FOR DESKTOP
+
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 100%;
+  }
+  .hero {
+    width: 100%;
+    padding: 200px 0;
+    background-color: #2f303a;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../imeges/hero/hero.jpg);
+    background-size: cover;
+    margin-bottom: 94px;
+  }
+
+  .baner {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $text-color;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-btn {
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    background-color: #2196f3;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: $text-color;
+    border: none;
+    border-radius: 4px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background: #188ce8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    &:focus {
+      background: #188ce8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
